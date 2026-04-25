@@ -1,0 +1,159 @@
+[gd_scene format=3 uid="uid://csrh05tjwoweo"]
+
+[ext_resource type="Theme" uid="uid://cu1kydnwylijs" path="res://UI/game_ui_theme.tres" id="1_atuke"]
+[ext_resource type="Texture2D" uid="uid://yrhvmkdckdms" path="res://Assets/game/objects/Basic tools and meterials.png" id="2_hgada"]
+[ext_resource type="Script" uid="uid://ch5cvkx6qf7l3" path="res://UI/inventory_panel.gd" id="2_jc538"]
+[ext_resource type="Texture2D" uid="uid://dpiaxxp2rpjgw" path="res://Assets/game/objects/Basic Plants.png" id="3_3ouoh"]
+[ext_resource type="Texture2D" uid="uid://clo3ogsyce4wt" path="res://Assets/game/objects/Egg item.png" id="4_jc538"]
+[ext_resource type="Texture2D" uid="uid://hwj5vomn382m" path="res://Assets/game/objects/Simple Milk and grass item.png" id="5_cead4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ui6vg"]
+atlas = ExtResource("2_hgada")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54kaq"]
+atlas = ExtResource("2_hgada")
+region = Rect2(0, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ermjs"]
+atlas = ExtResource("3_3ouoh")
+region = Rect2(80, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w3be6"]
+atlas = ExtResource("3_3ouoh")
+region = Rect2(80, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2t46n"]
+atlas = ExtResource("5_cead4")
+region = Rect2(32, 0, 16, 16)
+
+[node name="InventoryPanel" type="PanelContainer" unique_id=1885785383]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_atuke")
+theme_type_variation = &"DarkWoodPanel"
+script = ExtResource("2_jc538")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=802255021]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1103753624]
+layout_mode = 2
+
+[node name="Logs" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=1293176202]
+custom_minimum_size = Vector2(26, 32)
+layout_mode = 2
+theme = ExtResource("1_atuke")
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Logs" unique_id=2048042262]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_ui6vg")
+
+[node name="LogLabel" type="Label" parent="MarginContainer/VBoxContainer/Logs" unique_id=668216637]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_type_variation = &"InventoryLabel"
+text = "0"
+
+[node name="Stone" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=2006073065]
+custom_minimum_size = Vector2(26, 32)
+layout_mode = 2
+theme = ExtResource("1_atuke")
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Stone" unique_id=555463823]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_54kaq")
+
+[node name="StoneLabel" type="Label" parent="MarginContainer/VBoxContainer/Stone" unique_id=1627181585]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_type_variation = &"InventoryLabel"
+text = "0"
+
+[node name="Corn" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=431272653]
+custom_minimum_size = Vector2(26, 32)
+layout_mode = 2
+theme = ExtResource("1_atuke")
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Corn" unique_id=1731734535]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_ermjs")
+
+[node name="CornLabel" type="Label" parent="MarginContainer/VBoxContainer/Corn" unique_id=877042599]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_type_variation = &"InventoryLabel"
+text = "0"
+
+[node name="Tomato" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=689611289]
+custom_minimum_size = Vector2(26, 32)
+layout_mode = 2
+theme = ExtResource("1_atuke")
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Tomato" unique_id=937081021]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_w3be6")
+
+[node name="TomatoLabel" type="Label" parent="MarginContainer/VBoxContainer/Tomato" unique_id=2076557706]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_type_variation = &"InventoryLabel"
+text = "0"
+
+[node name="Egg" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=746301601]
+custom_minimum_size = Vector2(26, 32)
+layout_mode = 2
+theme = ExtResource("1_atuke")
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Egg" unique_id=566089671]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = ExtResource("4_jc538")
+
+[node name="EggLabel" type="Label" parent="MarginContainer/VBoxContainer/Egg" unique_id=2106285220]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_type_variation = &"InventoryLabel"
+text = "0"
+
+[node name="Milk" type="PanelContainer" parent="MarginContainer/VBoxContainer" unique_id=262444092]
+custom_minimum_size = Vector2(26, 32)
+layout_mode = 2
+theme = ExtResource("1_atuke")
+theme_type_variation = &"InventoryItemPanel"
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/Milk" unique_id=2133164831]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+texture = SubResource("AtlasTexture_2t46n")
+
+[node name="MilkLabel" type="Label" parent="MarginContainer/VBoxContainer/Milk" unique_id=1395103732]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_type_variation = &"InventoryLabel"
+text = "0"

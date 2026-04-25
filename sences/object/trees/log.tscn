@@ -10,12 +10,12 @@ region = Rect2(80, 32, 16, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_j2m86"]
 size = Vector2(16, 9)
 
-[node name="Log" type="Sprite2D" unique_id=1434742238]
+[node name="log" type="Sprite2D" unique_id=1434742238]
 y_sort_enabled = true
 texture = SubResource("AtlasTexture_y6dwb")
 
 [node name="CollectableComponent" parent="." unique_id=133130988 instance=ExtResource("2_asbms")]
-collectable_name = "Log"
+collectable_name = "log"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent" unique_id=983303203]
 position = Vector2(0, -0.5)
