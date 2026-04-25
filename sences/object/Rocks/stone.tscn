@@ -11,6 +11,7 @@ region = Rect2(114, 18, 10, 8)
 radius = 3.0
 
 [node name="stone" type="Sprite2D" unique_id=586488710]
+y_sort_enabled = true
 texture = SubResource("AtlasTexture_54711")
 
 [node name="CollectableComponent" parent="." unique_id=133130988 instance=ExtResource("2_54711")]

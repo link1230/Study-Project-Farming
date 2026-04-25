@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://deqa0sc60rjwc"]
+
+[ext_resource type="Texture2D" uid="uid://dpiaxxp2rpjgw" path="res://Assets/game/objects/Basic Plants.png" id="1_077a5"]
+[ext_resource type="PackedScene" uid="uid://bha6jiqv6i7tk" path="res://sences/component/collectable_component.tscn" id="2_qegco"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ilbjr"]
+size = Vector2(13, 13)
+
+[node name="Corn" type="Sprite2D" unique_id=1023405868]
+y_sort_enabled = true
+texture = ExtResource("1_077a5")
+hframes = 6
+vframes = 2
+frame = 5
+
+[node name="CollectableComponent" parent="." unique_id=133130988 instance=ExtResource("2_qegco")]
+collectable_name = "corn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectableComponent" unique_id=1145794596]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_ilbjr")
