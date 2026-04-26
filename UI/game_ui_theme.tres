@@ -1,6 +1,7 @@
 [gd_resource type="Theme" format=3 uid="uid://cu1kydnwylijs"]
 
 [ext_resource type="Texture2D" uid="uid://rcml8o07hf4o" path="res://Assets/ui/basic_ui_sprit.png" id="1_tplrb"]
+[ext_resource type="FontFile" uid="uid://daw42xy8adk7n" path="res://Assets/ui/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_5q4n0"]
 [ext_resource type="FontVariation" uid="uid://c6w0ofvel88qp" path="res://Assets/ui/字体/zx_palm.tres" id="2_ufipx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ufipx"]
@@ -14,6 +15,71 @@ texture_margin_top = 6.522002
 texture_margin_right = 7.1151814
 texture_margin_bottom = 7.048057
 region_rect = Rect2(0, 0, 30, 30)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vxs55"]
+load_path = "res://.godot/imported/basic_ui_sprit.png-062958de0f1d25026df4a227fb8be588.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_54p2f"]
+atlas = SubResource("CompressedTexture2D_vxs55")
+region = Rect2(59, 11, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8tctf"]
+texture = SubResource("AtlasTexture_54p2f")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7fkgw"]
+load_path = "res://.godot/imported/basic_ui_sprit.png-062958de0f1d25026df4a227fb8be588.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a1ywd"]
+atlas = SubResource("CompressedTexture2D_7fkgw")
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0wuq3"]
+texture = SubResource("AtlasTexture_a1ywd")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4no5k"]
+load_path = "res://.godot/imported/basic_ui_sprit.png-062958de0f1d25026df4a227fb8be588.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ommfv"]
+atlas = SubResource("CompressedTexture2D_4no5k")
+region = Rect2(59, 59, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_54p2f"]
+texture = SubResource("AtlasTexture_ommfv")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8tctf"]
+atlas = ExtResource("1_tplrb")
+region = Rect2(59, 155, 26, 26)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7fkgw"]
+texture = SubResource("AtlasTexture_8tctf")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r4xc4"]
+atlas = ExtResource("1_tplrb")
+region = Rect2(504, 131, 35, 18)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1ywd"]
+texture = SubResource("AtlasTexture_r4xc4")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(0, 0, 35, 18)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tplrb"]
 atlas = ExtResource("1_tplrb")
@@ -96,6 +162,17 @@ texture_margin_bottom = 6.0
 [resource]
 DarkWoodPanel/base_type = &"PanelContainer"
 DarkWoodPanel/styles/panel = SubResource("StyleBoxTexture_5q4n0")
+DayAndNightButton/base_type = &"Button"
+DayAndNightButton/styles/disabled = SubResource("StyleBoxTexture_8tctf")
+DayAndNightButton/styles/focus = SubResource("StyleBoxTexture_0wuq3")
+DayAndNightButton/styles/hover = SubResource("StyleBoxTexture_54p2f")
+DayAndNightButton/styles/normal = SubResource("StyleBoxTexture_7fkgw")
+DayAndNightButton/styles/pressed = SubResource("StyleBoxTexture_54p2f")
+DayAndNightCounterPanel/base_type = &"PanelContainer"
+DayAndNightCounterPanel/styles/panel = SubResource("StyleBoxTexture_a1ywd")
+DayAndNightLabel/base_type = &"Label"
+DayAndNightLabel/font_sizes/font_size = 18
+DayAndNightLabel/fonts/font = ExtResource("2_5q4n0")
 InventoryItemPanel/base_type = &"PanelContainer"
 InventoryItemPanel/styles/panel = SubResource("StyleBoxTexture_ufipx")
 InventoryLabel/base_type = &"Label"
