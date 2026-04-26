@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://bkivwkhyeyj5n"]
 
-[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://tailsets/new_tile_set.tres" id="1_unwaq"]
+[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://tailsets/game_tile_set.tres" id="1_unwaq"]
 [ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://sences/Player/test-player.tscn" id="2_j0fnd"]
 [ext_resource type="PackedScene" uid="uid://dpbcrn5a67bvy" path="res://sences/object/corn/corn_water.tscn" id="3_77j4u"]
 [ext_resource type="PackedScene" uid="uid://cgi7slk1gbafd" path="res://sences/object/tomato/tomato_water.tscn" id="4_af563"]

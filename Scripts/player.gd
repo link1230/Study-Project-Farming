@@ -12,3 +12,5 @@ func _ready() -> void:
 func on_tool_selected(tool:DataTypes.Tools) -> void:
 	current_tool = tool
 	hit_component.current_tool = tool
+	
+	

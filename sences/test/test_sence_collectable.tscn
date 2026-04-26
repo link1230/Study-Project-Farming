@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://bbrrs5yrggwhf"]
 
-[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://tailsets/new_tile_set.tres" id="1_tkhti"]
+[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://tailsets/game_tile_set.tres" id="1_tkhti"]
 [ext_resource type="PackedScene" uid="uid://odmb4hdepnd5" path="res://sences/object/Rocks/stone.tscn" id="2_gc6qe"]
 [ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://sences/Player/test-player.tscn" id="2_t644x"]
 [ext_resource type="PackedScene" uid="uid://c7653o03eolrg" path="res://sences/object/trees/log.tscn" id="3_m7vox"]
