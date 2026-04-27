@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cl1883g3uqpbk" path="res://Assets/game/tilesets/Wooden_House_Walls_Tilset.png" id="1_oxx2m"]
 [ext_resource type="Texture2D" uid="uid://cd4dxborxv6x2" path="res://Assets/game/objects/Basic Furniture.png" id="2_ya60i"]
-[ext_resource type="PackedScene" uid="uid://sm1u3hu54u7n" path="res://sences/houses/door.tscn" id="3_a5pn2"]
+[ext_resource type="PackedScene" uid="uid://sm1u3hu54u7n" path="res://Sences/houses/door.tscn" id="3_a5pn2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ya60i"]
 texture = ExtResource("1_oxx2m")

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bt6sw7p6nvx1j"]
 
 [ext_resource type="Texture2D" uid="uid://hwj5vomn382m" path="res://Assets/game/objects/Simple Milk and grass item.png" id="1_sr2ib"]
-[ext_resource type="PackedScene" uid="uid://bha6jiqv6i7tk" path="res://sences/component/collectable_component.tscn" id="2_cfsem"]
+[ext_resource type="PackedScene" uid="uid://bha6jiqv6i7tk" path="res://Sences/component/collectable_component.tscn" id="2_cfsem"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x3acl"]
 size = Vector2(10, 12)

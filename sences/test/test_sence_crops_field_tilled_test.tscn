@@ -1,13 +1,15 @@
 [gd_scene format=4 uid="uid://b1d7y7dj6yevb"]
 
-[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://tailsets/game_tile_set.tres" id="1_jsqc6"]
-[ext_resource type="PackedScene" uid="uid://bntfx4jimvqlo" path="res://sences/component/field_cursor_component.tscn" id="2_jsqc6"]
-[ext_resource type="Script" uid="uid://baxsssyu5ng5e" path="res://sences/component/field_cursor_component.gd" id="3_8yclp"]
-[ext_resource type="PackedScene" uid="uid://b3luq64wnu8pv" path="res://sences/component/crop_cursor_component.tscn" id="4_4d7ab"]
-[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://sences/Player/test-player.tscn" id="4_w7nan"]
-[ext_resource type="Script" uid="uid://cx5qt8cxr832w" path="res://sences/component/crop_cursor_component.gd" id="5_w7nan"]
+[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://Tailsets/game_tile_set.tres" id="1_jsqc6"]
+[ext_resource type="PackedScene" uid="uid://bntfx4jimvqlo" path="res://Sences/component/field_cursor_component.tscn" id="2_jsqc6"]
+[ext_resource type="Script" uid="uid://baxsssyu5ng5e" path="res://Sences/component/field_cursor_component.gd" id="3_8yclp"]
+[ext_resource type="PackedScene" uid="uid://b3luq64wnu8pv" path="res://Sences/component/crop_cursor_component.tscn" id="4_4d7ab"]
+[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/Player/test-player.tscn" id="4_w7nan"]
+[ext_resource type="Script" uid="uid://cx5qt8cxr832w" path="res://Sences/component/crop_cursor_component.gd" id="5_w7nan"]
 [ext_resource type="PackedScene" uid="uid://dekg5h8nx5qe5" path="res://UI/game_screen.tscn" id="5_xvttf"]
-[ext_resource type="PackedScene" uid="uid://dpenv2gblm146" path="res://sences/component/day_night_cycle_component.tscn" id="6_qsfvp"]
+[ext_resource type="PackedScene" uid="uid://dpenv2gblm146" path="res://Sences/component/day_night_cycle_component.tscn" id="6_qsfvp"]
+[ext_resource type="PackedScene" uid="uid://mnmmfrlhwln2" path="res://Sences/component/save_level_data_component.tscn" id="9_00bq2"]
+[ext_resource type="Script" uid="uid://ul2lqh6edshs" path="res://Sences/component/save_level_data_component.gd" id="10_gb0yk"]
 
 [node name="TestsencesCropFieldTilled" type="Node2D" unique_id=1531588811]
 
@@ -44,3 +46,6 @@ position = Vector2(223, 175)
 
 [node name="DayNightCycleComponent" parent="." unique_id=1129966840 instance=ExtResource("6_qsfvp")]
 visible = false
+
+[node name="SaveLevelDataComponent" parent="." unique_id=717949500 instance=ExtResource("9_00bq2")]
+script = ExtResource("10_gb0yk")

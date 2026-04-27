@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cwsnwga4new0m"]
 
 [ext_resource type="Texture2D" uid="uid://clo3ogsyce4wt" path="res://Assets/game/objects/Egg item.png" id="1_xrbos"]
-[ext_resource type="PackedScene" uid="uid://bha6jiqv6i7tk" path="res://sences/component/collectable_component.tscn" id="2_rhyjv"]
+[ext_resource type="PackedScene" uid="uid://bha6jiqv6i7tk" path="res://Sences/component/collectable_component.tscn" id="2_rhyjv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xrbos"]
 radius = 7.0

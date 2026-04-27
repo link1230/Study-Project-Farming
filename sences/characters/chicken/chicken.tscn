@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b2rc82lfwsp4a"]
 
 [ext_resource type="Texture2D" uid="uid://dg4ndv7gojft7" path="res://Assets/game/characters/Free Chicken Sprites.png" id="1_34ykh"]
-[ext_resource type="Script" uid="uid://bmer0whpjbtvg" path="res://sences/characters/chicken/chicken.gd" id="1_yi37y"]
+[ext_resource type="Script" uid="uid://bmer0whpjbtvg" path="res://Sences/characters/chicken/chicken.gd" id="1_yi37y"]
 [ext_resource type="Script" uid="uid://saujlholfne4" path="res://Scripts/state_machine/node_state_machine.gd" id="2_t11sr"]
-[ext_resource type="Script" uid="uid://depqx1o3pqepo" path="res://sences/characters/chicken/idle_chicken.gd" id="3_yi37y"]
-[ext_resource type="Script" uid="uid://dcs54ppde1xc1" path="res://sences/characters/chicken/walk_chicken.gd" id="4_t11sr"]
+[ext_resource type="Script" uid="uid://depqx1o3pqepo" path="res://Sences/characters/chicken/idle_chicken.gd" id="3_yi37y"]
+[ext_resource type="Script" uid="uid://dcs54ppde1xc1" path="res://Sences/characters/chicken/walk_chicken.gd" id="4_t11sr"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b0tws"]
 atlas = ExtResource("1_34ykh")

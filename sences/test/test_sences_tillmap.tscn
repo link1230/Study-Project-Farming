@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://dmsjinnx2dnen"]
 
-[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://tailsets/game_tile_set.tres" id="1_g0mfa"]
+[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://Tailsets/game_tile_set.tres" id="1_g0mfa"]
 
 [node name="Testsences" type="Node2D" unique_id=1531588811]
 

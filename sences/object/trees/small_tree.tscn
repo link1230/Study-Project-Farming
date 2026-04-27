@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://qmkeym3him6v"]
 
-[ext_resource type="Shader" uid="uid://btxoqynr421rl" path="res://sences/object/trees/shake.gdshader" id="1_obysc"]
+[ext_resource type="Shader" uid="uid://btxoqynr421rl" path="res://Sences/object/trees/shake.gdshader" id="1_obysc"]
 [ext_resource type="Texture2D" uid="uid://dyxxa8c61h1th" path="res://Assets/game/objects/Basic Grass Biom things 1.png" id="1_t37te"]
 [ext_resource type="Script" uid="uid://c7cdxe40e6w17" path="res://Scripts/small_tree.gd" id="2_5xydv"]
-[ext_resource type="PackedScene" uid="uid://ctsi6dn3bpi03" path="res://sences/component/hunt_component.tscn" id="2_026l1"]
-[ext_resource type="PackedScene" uid="uid://cdbl0day8lxl7" path="res://sences/component/damage_component.tscn" id="3_surqk"]
+[ext_resource type="PackedScene" uid="uid://ctsi6dn3bpi03" path="res://Sences/component/hunt_component.tscn" id="2_026l1"]
+[ext_resource type="PackedScene" uid="uid://cdbl0day8lxl7" path="res://Sences/component/damage_component.tscn" id="3_surqk"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1pgxa"]
 resource_local_to_scene = true

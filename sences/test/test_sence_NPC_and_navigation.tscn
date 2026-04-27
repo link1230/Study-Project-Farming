@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://cyjwt3fkpbd6u"]
 
-[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://tailsets/game_tile_set.tres" id="1_fqe2n"]
-[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://sences/Player/test-player.tscn" id="2_jmspp"]
-[ext_resource type="PackedScene" uid="uid://b2rc82lfwsp4a" path="res://sences/characters/chicken/chicken.tscn" id="3_7e1kk"]
-[ext_resource type="PackedScene" uid="uid://smum1m4sv1fe" path="res://sences/characters/cow/cow.tscn" id="4_jmspp"]
+[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://Tailsets/game_tile_set.tres" id="1_fqe2n"]
+[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/Player/test-player.tscn" id="2_jmspp"]
+[ext_resource type="PackedScene" uid="uid://b2rc82lfwsp4a" path="res://Sences/characters/chicken/chicken.tscn" id="3_7e1kk"]
+[ext_resource type="PackedScene" uid="uid://smum1m4sv1fe" path="res://Sences/characters/cow/cow.tscn" id="4_jmspp"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_fqe2n"]
 vertices = PackedVector2Array(176.74219, 287.03125, 142.86719, 246, 178.3125, 246, 293, 104, 292.71094, 104, 292.8125, 102.82031, 318.14063, 105.88281, 293, 235.22656, 319.96875, 215.90625, 303.07813, 287.9375, 290.3125, 246, 219, 246, 181, 235.22656, 219, 214, 266.64063, 154, 181, 214, 266.64063, 138, 267.21094, 138, 266.64063, 202, 267.21094, 202, 266.78125, 214, 267.21094, 154, 266.64063, 170, 267.21094, 170, 266.64063, 186, 267.21094, 186, 133, 214, 133, 118, 267.35156, 118)

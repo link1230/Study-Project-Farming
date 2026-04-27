@@ -1,13 +1,13 @@
 [gd_scene format=4 uid="uid://bbrrs5yrggwhf"]
 
-[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://tailsets/game_tile_set.tres" id="1_tkhti"]
-[ext_resource type="PackedScene" uid="uid://odmb4hdepnd5" path="res://sences/object/Rocks/stone.tscn" id="2_gc6qe"]
-[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://sences/Player/test-player.tscn" id="2_t644x"]
-[ext_resource type="PackedScene" uid="uid://c7653o03eolrg" path="res://sences/object/trees/log.tscn" id="3_m7vox"]
-[ext_resource type="PackedScene" uid="uid://lewco8a8rqa" path="res://sences/object/tomato/tomato.tscn" id="4_txnws"]
-[ext_resource type="PackedScene" uid="uid://cwsnwga4new0m" path="res://sences/object/egg/egg.tscn" id="5_klclj"]
-[ext_resource type="PackedScene" uid="uid://bt6sw7p6nvx1j" path="res://sences/object/milk/milk.tscn" id="6_m7vox"]
-[ext_resource type="PackedScene" uid="uid://deqa0sc60rjwc" path="res://sences/object/corn/corn.tscn" id="7_klclj"]
+[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://Tailsets/game_tile_set.tres" id="1_tkhti"]
+[ext_resource type="PackedScene" uid="uid://odmb4hdepnd5" path="res://Sences/object/Rocks/stone.tscn" id="2_gc6qe"]
+[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/Player/test-player.tscn" id="2_t644x"]
+[ext_resource type="PackedScene" uid="uid://c7653o03eolrg" path="res://Sences/object/trees/log.tscn" id="3_m7vox"]
+[ext_resource type="PackedScene" uid="uid://lewco8a8rqa" path="res://Sences/object/tomato/tomato.tscn" id="4_txnws"]
+[ext_resource type="PackedScene" uid="uid://cwsnwga4new0m" path="res://Sences/object/egg/egg.tscn" id="5_klclj"]
+[ext_resource type="PackedScene" uid="uid://bt6sw7p6nvx1j" path="res://Sences/object/milk/milk.tscn" id="6_m7vox"]
+[ext_resource type="PackedScene" uid="uid://deqa0sc60rjwc" path="res://Sences/object/corn/corn.tscn" id="7_klclj"]
 
 [node name="TestSenceCollectable" type="Node2D" unique_id=1531588811]
 y_sort_enabled = true

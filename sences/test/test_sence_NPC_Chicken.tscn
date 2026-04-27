@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://byxe86dhewabm"]
 
-[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://tailsets/game_tile_set.tres" id="1_ce6u2"]
-[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://sences/Player/test-player.tscn" id="2_kvb7s"]
-[ext_resource type="PackedScene" uid="uid://b2rc82lfwsp4a" path="res://sences/characters/chicken/chicken.tscn" id="2_maboo"]
+[ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://Tailsets/game_tile_set.tres" id="1_ce6u2"]
+[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/Player/test-player.tscn" id="2_kvb7s"]
+[ext_resource type="PackedScene" uid="uid://b2rc82lfwsp4a" path="res://Sences/characters/chicken/chicken.tscn" id="2_maboo"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_kvb7s"]
 vertices = PackedVector2Array(217.78906, 124.67969, 337.3672, 77.85156, 308.79688, 171.14844, 200.95313, 169.60938, 273.85156, 292.71094, 166.35156, 281.0625, 168.86719, 217.22656, 321.21094, 265.64063)

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://deqa0sc60rjwc"]
 
 [ext_resource type="Texture2D" uid="uid://dpiaxxp2rpjgw" path="res://Assets/game/objects/Basic Plants.png" id="1_077a5"]
-[ext_resource type="PackedScene" uid="uid://bha6jiqv6i7tk" path="res://sences/component/collectable_component.tscn" id="2_qegco"]
+[ext_resource type="PackedScene" uid="uid://bha6jiqv6i7tk" path="res://Sences/component/collectable_component.tscn" id="2_qegco"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ilbjr"]
 size = Vector2(13, 13)

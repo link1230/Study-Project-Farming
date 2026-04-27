@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://cgi7slk1gbafd"]
 
 [ext_resource type="Texture2D" uid="uid://dpiaxxp2rpjgw" path="res://Assets/game/objects/Basic Plants.png" id="1_8msip"]
-[ext_resource type="Script" uid="uid://bvu3q8wro652v" path="res://sences/object/tomato/tomato_water.gd" id="1_hdnes"]
-[ext_resource type="PackedScene" uid="uid://bnnti31q255ed" path="res://sences/object/watering_particles.tscn" id="2_hdnes"]
-[ext_resource type="PackedScene" uid="uid://vpgsg5erbduk" path="res://sences/object/flowering_particles.tscn" id="3_04lqe"]
-[ext_resource type="PackedScene" uid="uid://c4ojc3d2xv1ax" path="res://sences/component/growth_cycle_component.tscn" id="4_ypsue"]
-[ext_resource type="PackedScene" uid="uid://ctsi6dn3bpi03" path="res://sences/component/hunt_component.tscn" id="5_gx4sn"]
+[ext_resource type="Script" uid="uid://bvu3q8wro652v" path="res://Sences/object/tomato/tomato_water.gd" id="1_hdnes"]
+[ext_resource type="PackedScene" uid="uid://bnnti31q255ed" path="res://Sences/object/watering_particles.tscn" id="2_hdnes"]
+[ext_resource type="PackedScene" uid="uid://vpgsg5erbduk" path="res://Sences/object/flowering_particles.tscn" id="3_04lqe"]
+[ext_resource type="PackedScene" uid="uid://c4ojc3d2xv1ax" path="res://Sences/component/growth_cycle_component.tscn" id="4_ypsue"]
+[ext_resource type="PackedScene" uid="uid://ctsi6dn3bpi03" path="res://Sences/component/hunt_component.tscn" id="5_gx4sn"]
+[ext_resource type="PackedScene" uid="uid://5qd03hmse7k8" path="res://Sences/component/save_data_component.tscn" id="7_tnfyo"]
+[ext_resource type="Resource" uid="uid://da1ngsny2augk" path="res://Resource/sence_data_resource.tres" id="8_54fed"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_wtool"]
 radius = 4.1231055
@@ -33,3 +35,6 @@ tool = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent" unique_id=1214082063]
 position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_wtool")
+
+[node name="SaveDataComponent" parent="." unique_id=715824583 instance=ExtResource("7_tnfyo")]
+save_data_resource = ExtResource("8_54fed")
