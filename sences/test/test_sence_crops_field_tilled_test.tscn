@@ -10,8 +10,11 @@
 [ext_resource type="PackedScene" uid="uid://dpenv2gblm146" path="res://Sences/component/day_night_cycle_component.tscn" id="6_qsfvp"]
 [ext_resource type="PackedScene" uid="uid://mnmmfrlhwln2" path="res://Sences/component/save_level_data_component.tscn" id="9_00bq2"]
 [ext_resource type="Script" uid="uid://ul2lqh6edshs" path="res://Sences/component/save_level_data_component.gd" id="10_gb0yk"]
+[ext_resource type="PackedScene" uid="uid://dih5s3rklckku" path="res://Sences/component/test_sence_save_data_manager_component.tscn" id="11_gb0yk"]
 
 [node name="TestsencesCropFieldTilled" type="Node2D" unique_id=1531588811]
+
+[node name="TestSenceSaveDataManagerComponent" parent="." unique_id=453595340 instance=ExtResource("11_gb0yk")]
 
 [node name="GameTileMap" type="Node2D" parent="." unique_id=1033470595]
 

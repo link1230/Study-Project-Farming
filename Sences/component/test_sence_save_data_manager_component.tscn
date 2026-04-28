@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dih5s3rklckku"]
+
+[ext_resource type="Script" uid="uid://b672s15y4nh2a" path="res://Sences/component/test_sence_save_data_manager_component.gd" id="1_0u0cy"]
+
+[node name="TestSenceSaveDataManagerComponent" type="Node" unique_id=453595340]
+script = ExtResource("1_0u0cy")
