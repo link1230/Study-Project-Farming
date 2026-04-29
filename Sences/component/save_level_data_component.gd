@@ -31,24 +31,36 @@ func save_game() -> void:
 	save_node_data()
 
 	var result: int = ResourceSaver.save(game_data_resource, save_game_data_path + level_save_file_name)
+	if result != OK:
+		push_error("Save failed with error code: " + str(result))
 	
 func load_game() -> void:
 	var level_save_file_name: String = save_file_name % level_scene_name
 	var save_game_path: String = save_game_data_path + level_save_file_name
 
 	if !FileAccess.file_exists(save_game_path):
+		push_warning("Save file not found: " + save_game_path)
 		return
 
 	game_data_resource = ResourceLoader.load(save_game_path)
 
 	if game_data_resource == null:
+		push_error("Failed to load save file: " + save_game_path)
 		return
+
+	_cleanup_saved_nodes()
 
 	var root_node: Window = get_tree().root
 
 	for resource in game_data_resource.save_data_nodes:
-		if resource is Resource:
-			if resource is NodeDataResource:
-				resource._load_data(root_node)
+		if resource is NodeDataResource:
+			resource._load_data(root_node)
+
+func _cleanup_saved_nodes() -> void:
+	for node in get_tree().get_nodes_in_group("save_data_component"):
+		if node is SaveDataComponent:
+			var parent = node.parent_node
+			if parent != null and parent.scene_file_path.is_empty() == false:
+				parent.queue_free()
 	
 	
