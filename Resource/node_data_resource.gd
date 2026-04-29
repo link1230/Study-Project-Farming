@@ -5,7 +5,7 @@ extends Resource
 @export var node_path: NodePath
 @export var parent_node_path: NodePath
 
-func _save_data(node:Node2D)->void:
+func save_data(node:Node2D)->void:
 	global_position = node.global_position
 	node_path = node.get_path()
 	

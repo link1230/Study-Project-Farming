@@ -4,9 +4,9 @@ extends NodeDataResource
 @export var node_name: String
 @export var scene_file_path: String
 
-func _save_data(node: Node2D) -> void:
+func save_data(node: Node2D) -> void:
 	# 先调用父类 (NodeDataResource) 的同名方法，保存通用数据（如全局坐标、路径等）
-	super._save_data(node)
+	super.save_data(node)
 	
 	# 再保存当前场景特有的数据
 	node_name = node.name
@@ -24,6 +24,9 @@ func _load_data(window: Window) -> void:
 	if node_path != null:
 		var scene_file_resource: Resource = load(scene_file_path)
 		scene_node = scene_file_resource.instantiate() as Node2D
+		
+		parent_node.add_child(scene_node)
+		scene_node.global_position = global_position
 		
 	# 安全检查：确保父节点和我们要实例化的新节点都成功获取/生成了
 	if parent_node != null and scene_node != null:
