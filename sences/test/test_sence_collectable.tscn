@@ -2,7 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://Tailsets/game_tile_set.tres" id="1_tkhti"]
 [ext_resource type="PackedScene" uid="uid://odmb4hdepnd5" path="res://Sences/object/Rocks/stone.tscn" id="2_gc6qe"]
-[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/Player/test-player.tscn" id="2_t644x"]
+[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/characters/Player/test-player.tscn" id="2_t644x"]
 [ext_resource type="PackedScene" uid="uid://c7653o03eolrg" path="res://Sences/object/trees/log.tscn" id="3_m7vox"]
 [ext_resource type="PackedScene" uid="uid://lewco8a8rqa" path="res://Sences/object/tomato/tomato.tscn" id="4_txnws"]
 [ext_resource type="PackedScene" uid="uid://cwsnwga4new0m" path="res://Sences/object/egg/egg.tscn" id="5_klclj"]

@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://5qd03hmse7k8" path="res://Sences/component/save_data_component.tscn" id="3_a03kj"]
 [ext_resource type="PackedScene" uid="uid://b3luq64wnu8pv" path="res://Sences/component/crop_cursor_component.tscn" id="4_4d7ab"]
 [ext_resource type="Resource" uid="uid://xystlgw5664c" path="res://Resource/tilemap_layer_data_resource.tres" id="4_lqwj2"]
-[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/Player/test-player.tscn" id="4_w7nan"]
+[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/characters/Player/test-player.tscn" id="4_w7nan"]
 [ext_resource type="Script" uid="uid://cx5qt8cxr832w" path="res://Sences/component/crop_cursor_component.gd" id="5_w7nan"]
 [ext_resource type="PackedScene" uid="uid://dekg5h8nx5qe5" path="res://UI/game_screen.tscn" id="5_xvttf"]
 [ext_resource type="PackedScene" uid="uid://dpenv2gblm146" path="res://Sences/component/day_night_cycle_component.tscn" id="6_qsfvp"]

@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://2m8gjruoeinl"]
 
 [ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://Tailsets/game_tile_set.tres" id="1_xf62q"]
-[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/Player/test-player.tscn" id="2_okh7v"]
+[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/characters/Player/test-player.tscn" id="2_okh7v"]
 [ext_resource type="PackedScene" uid="uid://deqa0sc60rjwc" path="res://Sences/object/corn/corn.tscn" id="3_ht3e8"]
 [ext_resource type="PackedScene" uid="uid://cwsnwga4new0m" path="res://Sences/object/egg/egg.tscn" id="4_0jgxo"]
 [ext_resource type="PackedScene" uid="uid://bt6sw7p6nvx1j" path="res://Sences/object/milk/milk.tscn" id="5_bdmk1"]
