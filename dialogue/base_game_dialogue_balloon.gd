@@ -118,6 +118,9 @@ func start(with_dialogue_resource: DialogueResource = null, title: String = "", 
 		dialogue_resource = with_dialogue_resource
 	if not title.is_empty():
 		start_from_title = title
+	if not is_instance_valid(dialogue_resource):
+		assert(false, "dialogue_resource is null! Please provide a valid DialogueResource.")
+		return
 	dialogue_line = await dialogue_resource.get_next_dialogue_line(start_from_title, temporary_game_states)
 	show()
 

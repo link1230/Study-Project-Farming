@@ -12,6 +12,7 @@ func _ready() -> void:
 	interactable_component.interactable_deactivated.connect(on_interactable_deactivated)
 	interactable_label_component.hide()
 
+	GameDialogueManager.give_crop_seeds.connect(on_give_crop_seeds)
 
 func on_interactable_activated() -> void:
 	interactable_label_component.show()
@@ -28,3 +29,9 @@ func _unhandled_input(event: InputEvent) -> void:
 			var balloon: BaseGameDialogueBalloon = balloon_sence.instantiate()
 			get_tree().current_scene.add_child(balloon)
 			balloon.start(load("res://dialogue/conversations/guide.dialogue"), "start")
+			
+func on_give_crop_seeds() -> void:
+	ToolsManager.enable_tool_button(DataTypes.Tools.TillGround)
+	ToolsManager.enable_tool_button(DataTypes.Tools.WaterCrops)
+	ToolsManager.enable_tool_button(DataTypes.Tools.PlantCorn)
+	ToolsManager.enable_tool_button(DataTypes.Tools.PlantTomato)

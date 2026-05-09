@@ -1,10 +1,15 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
+宁添旭: [[嗨|你好|初次见面]], 周伊一
+宁添旭: 欢迎来到你的新农场
+- 请给我介绍一下农场布局
+	宁添旭: 这里是房子区域.
+	宁添旭: 这里是种植区域.
+	宁添旭: 这有一些种子给你
+	宁添旭: 你需要种植作物去喂养动物们
+	do GameDialogueManager.action_give_crop_seeds()
+	
+- 我先自己看看
+	宁添旭:好的有什么需要来找我
 - Start again => start
 - End the conversation => END
 Nathan: For more information see the online documentation.

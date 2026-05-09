@@ -10,11 +10,11 @@ region = Rect2(201, 105, 30, 30)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5q4n0"]
 texture = SubResource("AtlasTexture_ufipx")
-texture_margin_left = 8.0
+texture_margin_left = 6.6686077
 texture_margin_top = 6.522002
 texture_margin_right = 7.1151814
 texture_margin_bottom = 7.048057
-region_rect = Rect2(0, 0, 30, 30)
+region_rect = Rect2(0, 1, 30, 29)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vxs55"]
 load_path = "res://.godot/imported/basic_ui_sprit.png-062958de0f1d25026df4a227fb8be588.ctex"
