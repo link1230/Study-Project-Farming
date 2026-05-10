@@ -2,6 +2,20 @@
 
 [ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://Tailsets/game_tile_set.tres" id="1_5wpsh"]
 [ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/characters/Player/test-player.tscn" id="2_i6teb"]
+[ext_resource type="PackedScene" uid="uid://qmkeym3him6v" path="res://Sences/object/trees/small_tree.tscn" id="3_i6teb"]
+[ext_resource type="Shader" uid="uid://btxoqynr421rl" path="res://Sences/object/trees/shake.gdshader" id="4_5xl34"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nrxll"]
+resource_local_to_scene = true
+shader = ExtResource("4_5xl34")
+shader_parameter/shake_intensity = 0.0
+shader_parameter/shake_speed = 20.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gcbog"]
+resource_local_to_scene = true
+shader = ExtResource("4_5xl34")
+shader_parameter/shake_intensity = 0.0
+shader_parameter/shake_speed = 20.0
 
 [node name="Test_Tree" type="Node2D" unique_id=1531588811]
 
@@ -22,5 +36,17 @@ tile_set = ExtResource("1_5wpsh")
 
 [node name="Player" parent="." unique_id=1450009136 instance=ExtResource("2_i6teb")]
 position = Vector2(177, 166)
+current_tool = 1
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=860451344]
+
+[node name="TreeObjects" type="Node2D" parent="." unique_id=880048761]
+y_sort_enabled = true
+
+[node name="SmallTree" parent="TreeObjects" unique_id=880048762 instance=ExtResource("3_i6teb")]
+material = SubResource("ShaderMaterial_nrxll")
+position = Vector2(200, 200)
+
+[node name="SmallTree2" parent="TreeObjects" unique_id=880048763 instance=ExtResource("3_i6teb")]
+material = SubResource("ShaderMaterial_gcbog")
+position = Vector2(230, 200)
