@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://difulcr05k2lq"]
+
+[ext_resource type="Theme" uid="uid://cu1kydnwylijs" path="res://Sences/UI/game_ui_theme.tres" id="1_71cjt"]
+[ext_resource type="Script" uid="uid://c56n2e7kkhwsa" path="res://Sences/UI/game_menu_screen.gd" id="1_74yoi"]
+[ext_resource type="PackedScene" uid="uid://1agsohda7t42" path="res://Sences/UI/game_menu_screen_background.tscn" id="1_xyc4t"]
+
+[node name="GameMenuScreen" type="CanvasLayer" unique_id=1033224972]
+script = ExtResource("1_74yoi")
+
+[node name="Test_sence_tilemap_layer_y_sort" parent="." unique_id=1531588811 instance=ExtResource("1_xyc4t")]
+z_index = -1
+position = Vector2(-5, 13)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=764368919]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_71cjt")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer" unique_id=1381289183]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+
+[node name="Label" type="Label" parent="MarginContainer/MarginContainer" unique_id=1548356913]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5365157, 0.587099, 0.9328031, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.6627451)
+theme_override_colors/font_outline_color = Color(0.3997598, 0.65997756, 0.7699509, 1)
+theme_override_font_sizes/font_size = 54
+text = "CROPTAILS"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1586045788]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="StartGameButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=51683561]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+theme_type_variation = &"GameMenuButton"
+text = "开始游戏"
+
+[node name="SaveGameButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=2037226648]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+theme_type_variation = &"GameMenuButton"
+text = "保存游戏"
+
+[node name="ExitGameButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=53339245]
+custom_minimum_size = Vector2(100, 29)
+layout_mode = 2
+theme_type_variation = &"GameMenuButton"
+text = "退出游戏
+"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/StartGameButton" to="." method="_on_start_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/SaveGameButton" to="." method="_on_save_game_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/ExitGameButton" to="." method="_on_exit_game_button_pressed"]
