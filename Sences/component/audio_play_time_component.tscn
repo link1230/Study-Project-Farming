@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cwru1gew4laxs"]
+
+[ext_resource type="Script" uid="uid://qr2ueujsmrx2" path="res://Sences/component/audio_play_time_component.gd" id="1_sp7uc"]
+
+[node name="AudioPlayTimeComponent" type="Timer" unique_id=717772751]
+script = ExtResource("1_sp7uc")
+
+[connection signal="timeout" from="." to="." method="_on_timeout"]

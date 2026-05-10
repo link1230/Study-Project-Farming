@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://6k0cokytoids"]
 
 [ext_resource type="TileSet" uid="uid://7vusmxvbtkb4" path="res://Tailsets/game_tile_set.tres" id="1_sjd5s"]
+[ext_resource type="PackedScene" uid="uid://cq5g35bgua773" path="res://Audio/Music/on_the_farm_music.tscn" id="1_xo864"]
 [ext_resource type="PackedScene" uid="uid://b72qrklbb8qos" path="res://Sences/houses/large_house.tscn" id="2_pw2jb"]
 [ext_resource type="PackedScene" uid="uid://bntfx4jimvqlo" path="res://Sences/component/field_cursor_component.tscn" id="3_movu7"]
 [ext_resource type="PackedScene" uid="uid://b2rc82lfwsp4a" path="res://Sences/characters/chicken/chicken.tscn" id="3_vt4e1"]
@@ -33,6 +34,9 @@ source_geometry_mode = 2
 
 [node name="Level 1" type="Node2D" unique_id=456233033]
 y_sort_enabled = true
+
+[node name="OnTheFarmMusic" parent="." unique_id=13412710 instance=ExtResource("1_xo864")]
+autoplay = true
 
 [node name="GameTileMap" type="Node2D" parent="." unique_id=1225410229]
 y_sort_enabled = true
