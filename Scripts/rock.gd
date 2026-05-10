@@ -2,7 +2,7 @@ extends Sprite2D
 @onready var hurt_component: HurtComponent = $HurtComponent
 @onready var damage_component: DamageComponent = $DamageComponent
 
-var stone_sence = preload("res://sences/object/Rocks/stone.tscn")
+var stone_scene = preload("res://Sences/object/Rocks/stone.tscn")
 
 func _ready() -> void:
 	hurt_component.hurt.connect(on_hurt)
@@ -15,13 +15,13 @@ func on_hurt(hit_damage:int)->void:
 	material.set_shader_parameter("shake_intensity",0.0)
 	
 func on_max_damage_reached()->void :
-	call_deferred("add_stone_sence")
+	call_deferred("add_stone_scene")
 	queue_free()
 
 
 
-func add_stone_sence() ->void:
-	var stone_instance = stone_sence.instantiate() as Node2D
+func add_stone_scene() ->void:
+	var stone_instance = stone_scene.instantiate() as Node2D
 	stone_instance.global_position = global_position
 	get_parent().add_child(stone_instance)
 

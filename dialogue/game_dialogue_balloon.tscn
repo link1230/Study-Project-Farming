@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_cindb"]
 [ext_resource type="Theme" uid="uid://7u8gyvj2gmw0" path="res://dialogue/dialogue_balloon_theme.tres" id="2_xkmgq"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_aimjp"]
-[ext_resource type="PackedScene" uid="uid://crks27swkrdrw" path="res://UI/emotes_panel.tscn" id="3_vwqec"]
+[ext_resource type="PackedScene" uid="uid://crks27swkrdrw" path="res://Sences/UI/emotes_panel.tscn" id="3_vwqec"]
 
 [sub_resource type="Animation" id="Animation_nlsx6"]
 length = 0.001

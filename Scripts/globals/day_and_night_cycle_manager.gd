@@ -32,16 +32,17 @@ func set_initial_time()->void:
 	time = initial_total_minutes * GAME_MINUTE_DURATION
 	
 func recalculate_time()->void:
-	var total_minutes: int = int(time/GAME_MINUTE_DURATION)
-	var day: int = int(total_minutes/MINUTES_PER_DAY)
-	var current_day_minutes: int = total_minutes % MINUTES_PER_DAY
-	var hour: int = int(current_day_minutes / MINUTES_PER_HOUR)
-	var minute: int = int(current_day_minutes % MINUTES_PER_HOUR)
+	var total_minutes: float = time / GAME_MINUTE_DURATION
+	var total_minutes_int: int = int(total_minutes)
+	var calculated_day: int = total_minutes_int / MINUTES_PER_DAY
+	var current_day_minutes: int = total_minutes_int % MINUTES_PER_DAY
+	var calculated_hour: int = current_day_minutes / MINUTES_PER_HOUR
+	var calculated_minute: int = current_day_minutes % MINUTES_PER_HOUR
 	
-	if current_minute != minute:
-		current_minute = minute
-		time_tick.emit(day,hour,minute)
+	if current_minute != calculated_minute:
+		current_minute = calculated_minute
+		time_tick.emit(calculated_day, calculated_hour, calculated_minute)
 	
-	if current_day != day:
-		current_day = day
-		time_tick_day.emit(day)
+	if current_day != calculated_day:
+		current_day = calculated_day
+		time_tick_day.emit(calculated_day)

@@ -5,8 +5,9 @@ extends NodeState
 @export var hit_component_collision_shape : CollisionShape2D
 
 func _ready() -> void:
-	hit_component_collision_shape.disabled = true
-	hit_component_collision_shape.position = Vector2(0,0)
+	if is_instance_valid(hit_component_collision_shape):
+		hit_component_collision_shape.disabled = true
+		hit_component_collision_shape.position = Vector2(0,0)
 
 func _on_process(_delta : float) -> void:
 	pass
@@ -17,30 +18,39 @@ func _on_physics_process(_delta : float) -> void:
 
 
 func _on_next_transitions() -> void:
-	if !animated_sprite_2d.is_playing():
-		transition.emit("Idle")
-##如果没有播放浇水动画，转到发呆状态
+	if not is_instance_valid(animated_sprite_2d) or !animated_sprite_2d.is_playing():
+		transition.emit("idle")
 
 func _on_enter() -> void:
+	if not is_instance_valid(animated_sprite_2d) or not is_instance_valid(player):
+		return
+	
 	if player.play_direction == Vector2.UP:
 		animated_sprite_2d.play("watering_front")
-		hit_component_collision_shape.position = Vector2(3,-20)
 	elif player.play_direction == Vector2.DOWN:
 		animated_sprite_2d.play("watering_back")
-		hit_component_collision_shape.position = Vector2(-3,2)
 	elif player.play_direction == Vector2.RIGHT:
 		animated_sprite_2d.play("watering_right")
-		hit_component_collision_shape.position = Vector2(9,0)
 	elif player.play_direction == Vector2.LEFT:
 		animated_sprite_2d.play("watering_left")
-		hit_component_collision_shape.position = Vector2(-9,0)
 	else:
 		animated_sprite_2d.play("watering_front")
-		hit_component_collision_shape.position = Vector2(-9,0)
-##播放浇树动画
-	hit_component_collision_shape.disabled = false
+	
+	if is_instance_valid(hit_component_collision_shape):
+		if player.play_direction == Vector2.UP:
+			hit_component_collision_shape.position = Vector2(3,-20)
+		elif player.play_direction == Vector2.DOWN:
+			hit_component_collision_shape.position = Vector2(-3,2)
+		elif player.play_direction == Vector2.RIGHT:
+			hit_component_collision_shape.position = Vector2(9,0)
+		elif player.play_direction == Vector2.LEFT:
+			hit_component_collision_shape.position = Vector2(-9,0)
+		else:
+			hit_component_collision_shape.position = Vector2(-9,0)
+		hit_component_collision_shape.disabled = false
 
 func _on_exit() -> void:
-	animated_sprite_2d.stop()
-	hit_component_collision_shape.disabled = true
-##退出该状态时，停止播放动画
+	if is_instance_valid(animated_sprite_2d):
+		animated_sprite_2d.stop()
+	if is_instance_valid(hit_component_collision_shape):
+		hit_component_collision_shape.disabled = true

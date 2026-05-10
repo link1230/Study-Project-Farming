@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dekg5h8nx5qe5"]
 
-[ext_resource type="Theme" uid="uid://cu1kydnwylijs" path="res://UI/game_ui_theme.tres" id="1_sqs7k"]
-[ext_resource type="PackedScene" uid="uid://crks27swkrdrw" path="res://UI/emotes_panel.tscn" id="2_febr6"]
-[ext_resource type="PackedScene" uid="uid://bracu0jw1c82i" path="res://UI/tools_panel.tscn" id="2_gbkdh"]
-[ext_resource type="PackedScene" uid="uid://csrh05tjwoweo" path="res://UI/inventory_panel.tscn" id="3_gbkdh"]
-[ext_resource type="PackedScene" uid="uid://boppraqdfg2h5" path="res://UI/day_and_night_panel.tscn" id="4_8vpl5"]
+[ext_resource type="Theme" uid="uid://cu1kydnwylijs" path="res://Sences/UI/game_ui_theme.tres" id="1_sqs7k"]
+[ext_resource type="PackedScene" uid="uid://crks27swkrdrw" path="res://Sences/UI/emotes_panel.tscn" id="2_febr6"]
+[ext_resource type="PackedScene" uid="uid://bracu0jw1c82i" path="res://Sences/UI/tools_panel.tscn" id="2_gbkdh"]
+[ext_resource type="PackedScene" uid="uid://csrh05tjwoweo" path="res://Sences/UI/inventory_panel.tscn" id="3_gbkdh"]
+[ext_resource type="PackedScene" uid="uid://boppraqdfg2h5" path="res://Sences/UI/day_and_night_panel.tscn" id="4_8vpl5"]
 
 [node name="GameScreen" type="CanvasLayer" unique_id=1240322062]
 

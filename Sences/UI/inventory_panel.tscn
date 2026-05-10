@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://csrh05tjwoweo"]
 
-[ext_resource type="Theme" uid="uid://cu1kydnwylijs" path="res://UI/game_ui_theme.tres" id="1_atuke"]
+[ext_resource type="Theme" uid="uid://cu1kydnwylijs" path="res://Sences/UI/game_ui_theme.tres" id="1_atuke"]
 [ext_resource type="Texture2D" uid="uid://yrhvmkdckdms" path="res://Assets/game/objects/Basic tools and meterials.png" id="2_hgada"]
-[ext_resource type="Script" uid="uid://ch5cvkx6qf7l3" path="res://UI/inventory_panel.gd" id="2_jc538"]
+[ext_resource type="Script" uid="uid://ch5cvkx6qf7l3" path="res://Sences/UI/inventory_panel.gd" id="2_jc538"]
 [ext_resource type="Texture2D" uid="uid://dpiaxxp2rpjgw" path="res://Assets/game/objects/Basic Plants.png" id="3_3ouoh"]
 [ext_resource type="Texture2D" uid="uid://clo3ogsyce4wt" path="res://Assets/game/objects/Egg item.png" id="4_jc538"]
 [ext_resource type="Texture2D" uid="uid://hwj5vomn382m" path="res://Assets/game/objects/Simple Milk and grass item.png" id="5_cead4"]

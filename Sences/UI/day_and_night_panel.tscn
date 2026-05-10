@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://boppraqdfg2h5"]
 
-[ext_resource type="Theme" uid="uid://cu1kydnwylijs" path="res://UI/game_ui_theme.tres" id="1_ifhix"]
-[ext_resource type="Script" uid="uid://ygc2s1cq3fmw" path="res://UI/day_and_night_panel.gd" id="2_f0kaj"]
+[ext_resource type="Theme" uid="uid://cu1kydnwylijs" path="res://Sences/UI/game_ui_theme.tres" id="1_ifhix"]
+[ext_resource type="Script" uid="uid://ygc2s1cq3fmw" path="res://Sences/UI/day_and_night_panel.gd" id="2_f0kaj"]
 [ext_resource type="Texture2D" uid="uid://rcml8o07hf4o" path="res://Assets/ui/basic_ui_sprit.png" id="2_n3dto"]
 
 [sub_resource type="ButtonGroup" id="ButtonGroup_n3dto"]

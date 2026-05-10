@@ -1,11 +1,11 @@
 [gd_resource type="Theme" format=3 uid="uid://cu1kydnwylijs"]
 
-[ext_resource type="Texture2D" uid="uid://rcml8o07hf4o" path="res://Assets/ui/basic_ui_sprit.png" id="1_tplrb"]
-[ext_resource type="FontFile" uid="uid://daw42xy8adk7n" path="res://Assets/ui/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_5q4n0"]
-[ext_resource type="FontVariation" uid="uid://c6w0ofvel88qp" path="res://Assets/ui/字体/zx_palm.tres" id="2_ufipx"]
+[ext_resource type="Texture2D" uid="uid://rcml8o07hf4o" path="res://Assets/ui/basic_ui_sprit.png" id="1_epfh4"]
+[ext_resource type="FontFile" uid="uid://daw42xy8adk7n" path="res://Assets/ui/fonts/pixelFont-7-8x14-sproutLands.ttf" id="2_l3jim"]
+[ext_resource type="FontVariation" uid="uid://c6w0ofvel88qp" path="res://Assets/ui/字体/zx_palm.tres" id="3_kv7br"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ufipx"]
-atlas = ExtResource("1_tplrb")
+atlas = ExtResource("1_epfh4")
 region = Rect2(201, 105, 30, 30)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5q4n0"]
@@ -59,7 +59,7 @@ texture_margin_right = 4.0
 texture_margin_bottom = 4.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8tctf"]
-atlas = ExtResource("1_tplrb")
+atlas = ExtResource("1_epfh4")
 region = Rect2(59, 155, 26, 26)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7fkgw"]
@@ -70,7 +70,7 @@ texture_margin_right = 4.0
 texture_margin_bottom = 4.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r4xc4"]
-atlas = ExtResource("1_tplrb")
+atlas = ExtResource("1_epfh4")
 region = Rect2(504, 131, 35, 18)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1ywd"]
@@ -82,7 +82,7 @@ texture_margin_bottom = 2.0
 region_rect = Rect2(0, 0, 35, 18)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tplrb"]
-atlas = ExtResource("1_tplrb")
+atlas = ExtResource("1_epfh4")
 region = Rect2(107, 59, 26, 26)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ufipx"]
@@ -135,7 +135,7 @@ texture_margin_right = 4.0
 texture_margin_bottom = 6.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jcik5"]
-atlas = ExtResource("1_tplrb")
+atlas = ExtResource("1_epfh4")
 region = Rect2(11, 155, 26, 28)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ommfv"]
@@ -172,12 +172,12 @@ DayAndNightCounterPanel/base_type = &"PanelContainer"
 DayAndNightCounterPanel/styles/panel = SubResource("StyleBoxTexture_a1ywd")
 DayAndNightLabel/base_type = &"Label"
 DayAndNightLabel/font_sizes/font_size = 18
-DayAndNightLabel/fonts/font = ExtResource("2_5q4n0")
+DayAndNightLabel/fonts/font = ExtResource("2_l3jim")
 InventoryItemPanel/base_type = &"PanelContainer"
 InventoryItemPanel/styles/panel = SubResource("StyleBoxTexture_ufipx")
 InventoryLabel/base_type = &"Label"
 InventoryLabel/font_sizes/font_size = 8
-InventoryLabel/fonts/font = ExtResource("2_ufipx")
+InventoryLabel/fonts/font = ExtResource("3_kv7br")
 MarginContainer/constants/margin_bottom = 10
 MarginContainer/constants/margin_left = 10
 MarginContainer/constants/margin_right = 10

@@ -58,6 +58,7 @@ animations = [{
 radius = 8.062258
 
 [node name="Cow" type="CharacterBody2D" unique_id=986335496]
+y_sort_enabled = true
 collision_layer = 64
 script = ExtResource("1_65usw")
 

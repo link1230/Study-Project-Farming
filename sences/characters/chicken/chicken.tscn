@@ -65,6 +65,7 @@ animations = [{
 radius = 5.0
 
 [node name="Chicken" type="CharacterBody2D" unique_id=492378475]
+y_sort_enabled = true
 collision_layer = 64
 script = ExtResource("1_yi37y")
 
@@ -83,7 +84,6 @@ path_desired_distance = 10.0
 path_postprocessing = 1
 avoidance_enabled = true
 radius = 5.0
-debug_enabled = true
 
 [node name="StateMachine" type="Node" parent="." unique_id=666382050 node_paths=PackedStringArray("initial_node_state")]
 script = ExtResource("2_t11sr")

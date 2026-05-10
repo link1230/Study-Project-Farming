@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://v1lf0qdut4ah"]
+
+[ext_resource type="PackedScene" uid="uid://dekg5h8nx5qe5" path="res://Sences/UI/game_screen.tscn" id="1_3sqdm"]
+[ext_resource type="PackedScene" uid="uid://6k0cokytoids" path="res://Sences/levels/level_1.tscn" id="1_asjvx"]
+[ext_resource type="PackedScene" uid="uid://6s0novo8kq5r" path="res://Sences/characters/Player/test-player.tscn" id="2_3rc11"]
+[ext_resource type="PackedScene" uid="uid://dpenv2gblm146" path="res://Sences/component/day_night_cycle_component.tscn" id="2_asjvx"]
+
+[node name="MainScene" type="Node" unique_id=1620942392]
+
+[node name="GameRoot" type="Node2D" parent="." unique_id=572734331]
+y_sort_enabled = true
+
+[node name="LevelRoot" type="Node2D" parent="GameRoot" unique_id=1999867037]
+y_sort_enabled = true
+
+[node name="Level 1" parent="GameRoot/LevelRoot" unique_id=456233033 instance=ExtResource("1_asjvx")]
+
+[node name="Player" parent="GameRoot" unique_id=1450009136 instance=ExtResource("2_3rc11")]
+position = Vector2(326, 263)
+
+[node name="Camera2D" type="Camera2D" parent="GameRoot/Player" unique_id=839650603]
+
+[node name="GameScreen" parent="." unique_id=1240322062 instance=ExtResource("1_3sqdm")]
+
+[node name="DayNightCycleComponent" parent="." unique_id=1129966840 instance=ExtResource("2_asjvx")]
